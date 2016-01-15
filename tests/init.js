@@ -194,7 +194,7 @@ afterTest(function (test) {
  ** _test: Initializes the web driver
  ** testNamePrefix: Name of the test that's running
  ** environment: dev, staging, prod
- ** gridURL: http://10.10.4.102:5555/wd/hub
+ ** gridURL: <grid_url>
  ** deviceType: mobile/tablet/desktop
  ** browserName: Firefox, Safari, Chrome
  ** callback: returns the method
