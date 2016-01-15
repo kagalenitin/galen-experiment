@@ -19,7 +19,7 @@ All tests will be created using the testapp.galenframework.com website.
     Version: 2.2.1
     JavaScript executor: Rhino 1.7 release 5 2015 01 29
 	```
-	
+
 # Run Test:
 1. You can run test using the shell script.
     ```
@@ -30,6 +30,5 @@ All tests will be created using the testapp.galenframework.com website.
     ```
         galen test tests/*.test.js -Denvironment=local --htmlreport reports -DdeviceType=desktop -DbrowserName=firefox
     ```
-Note the command used is a personal preference. You can pass any argument.
 
 [1]: http://galenframework.com
