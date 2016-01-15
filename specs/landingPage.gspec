@@ -1,0 +1,43 @@
+@objects
+    logo             id  header-logo
+    headerText       css .middle-wrapper>h1
+    homeOption       css .middle-wrapper>ul>li:first-child>a
+    myNotesOption    css .middle-wrapper>ul>li:nth-child(2)>a
+    aboutOption      css .middle-wrapper>ul>li:nth-child(3)>a
+    contactOption    css .middle-wrapper>ul>li:last-child>a
+    loginButton      css .btn.btn-lg.btn-primary.button-login
+    welcomeHeader    css #welcome-page>h1
+
+= Verify Landing Page Header elements =
+    @on header
+        logo:
+            visible
+
+        homeOption:
+            text is "Home"
+
+        myNotesOption:
+            text is "My Notes"
+
+        aboutOption:
+            text is "About"
+
+        contactOption:
+            text is "Contact"
+
+    @on desktop, mobile:
+        @set
+            deviceType  ${deviceType}
+        headerText:
+            @if ${deviceType == "desktop"}
+                text is "Sample Website for Galen Framework"
+            @else
+                text is "Sample Website"
+
+= Verify Landing Page Body elements =
+    @on body
+        welcomeHeader:
+            text is "Welcome to our test page!"
+
+        loginButton:
+            text is "Login"
