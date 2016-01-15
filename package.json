@@ -1,0 +1,26 @@
+{
+  "name": "galen-experiment",
+  "version": "1.0.0",
+  "description": "Sample project using testapp.galenframework.com website.",
+  "main": "run.sh",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "galen test tests/*.test.js -Denvironment=dev --htmlreport reports -DdeviceType=desktop -DbrowserName=firefox -DgridURL=<url_of_grid>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kagalenitin/galen-experiment.git"
+  },
+  "keywords": [
+    "Galen",
+    "Framework",
+    "Javascript"
+  ],
+  "author": "Nitin K",
+  "license": "ISC",
+  "dependencies": {
+    "galenframework-cli": "2.2.0"
+  }
+}

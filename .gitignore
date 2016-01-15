@@ -1,0 +1,10 @@
+*.lock
+reports/
+.DS_Store
+.idea/
+report.html
+log.html
+.git
+output.xml
+testngreports/
+node_modules/
