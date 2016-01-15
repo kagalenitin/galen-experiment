@@ -19,6 +19,7 @@ All tests will be created using the testapp.galenframework.com website.
     Version: 2.2.1
     JavaScript executor: Rhino 1.7 release 5 2015 01 29
 	```
+	
 # Run Test:
 1. You can run test using the shell script.
     ```
