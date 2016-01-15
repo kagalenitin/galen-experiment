@@ -1,0 +1,32 @@
+@objects
+    loginBlock     css #login-page>h2
+    username       css .form-control[name="login.username"]
+    password       css .form-control[name="login.password"]
+    loginButton    css .btn.btn-lg.btn-primary.button-login
+    cancelButton   css .btn.btn-lg.btn-default.button-cancel
+    errorMessage   css #login-error-message
+
+= Verify Login Page elements =
+    @on desktop, mobile
+        loginBlock:
+            text is "Login"
+
+        username:
+            visible
+            text is ""
+
+        password:
+            visible
+            text is ""
+
+        loginButton:
+            text is "Login"
+
+        cancelButton:
+            text is "Cancel"
+
+= Verify error message =
+    @on error
+        errorMessage:
+            text is "The username or password are incorrect"
+
