@@ -42,3 +42,14 @@ _test("Verify the Login Page Error Text Element", environment, gridURL, deviceTy
     loginPage.incorrectUserLogin("test", "tester");
     checkLayout(driver, "./specs/loginPage.gspec", "error");
 });
+
+//Will retry the tests in case of failures
+testRetry(function (_test, retryCount){
+    // Retrying only Test A
+    if (retryCount < 3) {
+        return true;
+    }
+    else {
+        return false;
+    }
+});

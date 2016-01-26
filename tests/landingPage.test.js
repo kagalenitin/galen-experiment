@@ -43,3 +43,14 @@ _test("Verify the Landing Page Body", environment, gridURL, deviceType, browserN
     checkLayout(driver, "./specs/landingPage.gspec", "body");
 
 });
+
+//Will retry the tests in case of failures
+testRetry(function (_test, retryCount){
+    // Retrying only Test A
+    if (retryCount < 3) {
+        return true;
+    }
+    else {
+        return false;
+    }
+});
